@@ -1,0 +1,15 @@
+---
+# tasks file for nclu
+- include_tasks: license.yml
+  tags:
+    - cumulus
+    - cumulus_license
+
+- include_tasks: switchd.yml
+  tags:
+    - cumulus
+    - switchd_restart
+
+- include_tasks: commands.yml
+  tags:
+    - cumulus

@@ -1,0 +1,10 @@
+---
+galaxy_name: cumulus-nclu
+github_user: nertwork
+github_name: ansible-cumulus-nclu
+badges: |
+  [![Build Status](https://img.shields.io/travis/nertwork/ansible-cumulus-nclu.svg)](https://travis-ci.org/nertwork/ansible-sudo)
+  [![Galaxy](http://img.shields.io/badge/galaxy-franklinkim.sudo-blue.svg)](https://galaxy.ansible.com/list#/roles/1380)
+  [![GitHub Tags](https://img.shields.io/github/tag/nertwork/ansible-cumulus-nclu.svg)](https://github.com/nertwork/ansible-sudo)
+  > * installs cumulus license
+  > * configures nclu

@@ -1,0 +1,22 @@
+galaxy_info:
+  author: James Gomez
+  description: This configures Cumulus Linux 3.2 and above
+  company: Dreamhost
+  license: BSD
+  min_ansible_version: 2.3
+
+  platforms:
+  - name: Cumulus
+    versions:
+    - 3.2
+    - 3.3
+    - 3.4
+    - 3.5
+
+  galaxy_tags: 
+    - cumulus
+    - nclu
+    - frr
+    - networking
+
+dependencies: []

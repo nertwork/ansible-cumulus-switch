@@ -1,0 +1,11 @@
+---
+# handlers file for nclu
+- name: start and enable switchd
+  service:
+    name: switchd
+    enabled: yes
+    state: started
+
+- name: commit commands
+  nclu:
+    commit: true

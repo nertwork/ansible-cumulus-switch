@@ -1,0 +1,17 @@
+---
+# tasks file for nclu
+- name: add nclu group commands
+  nclu:
+     commands:
+        - "{{ item }}"
+  notify:
+    - commit commands
+  with_items: "{{ cumulus_nclu.group_commands }}"
+
+- name: add nclu host commands
+  nclu:
+     commands:
+        - "{{ item }}"
+  notify:
+    - commit commands
+  with_items: "{{ cumulus_nclu.commands }}"

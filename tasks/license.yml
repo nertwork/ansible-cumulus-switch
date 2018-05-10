@@ -1,0 +1,21 @@
+---
+# tasks file for nclu
+- name: check switchd status
+  shell: systemctl status switchd
+  ignore_errors: yes
+  changed_when: false
+  register: service_switchd_status
+
+- name: create cumulus license file
+  copy:
+    dest: "{{ cumulus_nclu.cumulus_license_file }}"
+    content: "{{ cumulus_nclu.cumulus_license }}"
+  when: cumulus_nclu.cumulus_license is defined
+  register: cumulus_license_file
+
+- name: install cumulus license
+  shell: cl-license -i "{{ cumulus_nclu.cumulus_license_file }}"
+  notify:
+    - start and enable switchd
+  when: (service_switchd_status is failed) or
+        (cumulus_license_file.changed)

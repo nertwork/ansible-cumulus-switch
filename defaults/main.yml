@@ -1,0 +1,8 @@
+---
+# defaults file for nclu
+cumulus_nclu:
+  switchd_commands: []
+  switchd_group_commands: []
+  commands: []
+  group_commands: []
+  cumulus_license_file: /var/tmp/cl_license

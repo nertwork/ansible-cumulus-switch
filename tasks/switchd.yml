@@ -1,0 +1,15 @@
+---
+# tasks file for nclu
+- name: add switchd restart group commands
+  nclu:
+     commands:
+        - "{{ item }}"
+     atomic: true
+  with_items: "{{ cumulus_nclu.switchd_group_commands }}"
+
+- name: add switchd restart host commands
+  nclu:
+     commands:
+        - "{{ item }}"
+     atomic: true
+  with_items: "{{ cumulus_nclu.switchd_commands }}"
