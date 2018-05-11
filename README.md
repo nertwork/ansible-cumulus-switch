@@ -15,6 +15,8 @@ Variable    | Description | Type | Default
 ------------|-------------|------|--------
 `cl_license` | Cumulus license in a string format | String | ``
 `commands` | Commands to run for all nclu devices | Array | `[]`
+`template_group_commands` | Commands to run for all nclu devices to be used in group vars | Array | `[]`
+`template_commands` | Commands to run for all nclu devices | Array | `[]`
 `group_commands` | Commands to run for all nclu devices to be used in group vars | Array | `[]`
 `switchd_commands` | Commands that will restart switchd on nclu devices | Array | `[]`
 `switchd_group_commands` | Commands that will restart switchd on nclu devices to be used in a group vars | Array | `[]`
