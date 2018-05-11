@@ -1,0 +1,13 @@
+extends: default
+  
+rules:
+  # 90 chars should be enough, but don't fail if a line is longe
+  line-length:
+    level: warning
+  indentation:
+    spaces: 2
+
+ignore: |
+  .yamllint.yaml
+  .gitlab-ci.yml
+  roles
